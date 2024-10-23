@@ -1,0 +1,9 @@
+/dist
+/WeiMonitor.spec
+/威.psd
+__pycache__/
+*.pyc
+build/
+dist/
+logs/
+*.spec
