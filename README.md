@@ -1,4 +1,4 @@
-![第2页-1](https://github.com/user-attachments/assets/5757530d-9eb0-4c9f-903f-f41226f782d4)WeiMonitor （威守护）使用说明书
+WeiMonitor （威守护）使用说明书
 
 简介
 WeiMonitor（威守护）是一款通用守护程序，旨在监控指定的Windows进程，并根据配置文件自动化执行预定命令，以确保指定的Windows进程能够持续运行。该软件可最小化到系统托盘，并提供便捷的用户界面供用户填写和维护配置。
@@ -14,7 +14,7 @@ WeiMonitor（威守护）是一款通用守护程序，旨在监控指定的Wind
 
 系统要求
 操作系统：Windows 7 或更高版本
-
+![第2页-1](https://github.com/user-attachments/assets/5757530d-9eb0-4c9f-903f-f41226f782d4)
 
 安装与设置
 下载：从官方网站或其他受信任的资源下载 WeiMonitor 安装包。
@@ -81,6 +81,8 @@ Q3: 日志文件在哪里可以找到？
 Q4:无法通过 exe 路径启动怎么办？
 由于部分电脑权限问题，直接指定 exe 路径可能会无法启动。此时可以将监控的 exe 程序建立
 一个快捷方式，通常把快捷方式放桌面上。
+![第4页-2](https://github.com/user-attachments/assets/2cdee81c-3777-400f-ba56-29537ab6f97e)
+
 然后在威守护中，设定桌面快捷方式路径为启动命令。
 例如：
 command=D:\Users\lin.wei3\Desktop\bt4560.lnk
