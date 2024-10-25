@@ -14,6 +14,7 @@ WeiMonitor（威守护）是一款通用守护程序，旨在监控指定的Wind
 
 系统要求
 操作系统：Windows 7 或更高版本
+
 ![截图](https://github.com/user-attachments/assets/d0ef8743-a2f0-43bc-ae40-837abda10bf8)
 
 
@@ -92,6 +93,6 @@ command=D:\Users\lin.wei3\Desktop\bt4560.lnk
 支持与反馈
 如果您在使用 WeiMonitor 的过程中遇到任何问题，或有建议，请通过以下方式联系我们：
 
-邮箱：lin.wei3@fdbatt.com
+邮箱：wwip@qq.com
 感谢您使用 WeiMonitor（威守护），愿它能够为您提供帮助与便利！
 
