@@ -39,6 +39,16 @@ def get_version_from_file():
 
 VERSION = get_version_from_file()
 
+def resource_path(relative_path):
+    """ 获取资源的绝对路径 """
+    try:
+        # PyInstaller 创建临时文件夹并将路径存储在 _MEIPASS 中
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 class ProcessMonitor:
     @staticmethod
     def resource_path(relative_path):
@@ -62,11 +72,11 @@ class ProcessMonitor:
         self.log_line_count = 0
 
         # 设置窗口图标和任务栏图标
-        icon_path = 'icon.ico'
+        icon_path = resource_path("icon.ico")
         if os.path.exists(icon_path):
             master.iconbitmap(icon_path)
         else:
-            print(f"警告：图标文件 {icon_path} 不存在")
+            print(f"警告：图标文件未找到: {icon_path}")
 
         self.create_widgets()
         self.is_monitoring = False
@@ -363,7 +373,7 @@ class ProcessMonitor:
 
     def auto_start_monitoring(self):
         self.start_monitoring()
-        self.master.after(100, self.hide_window)  # 延迟100毫秒后最小化窗口
+        self.master.after(2000, self.hide_window)  # 延迟2000毫秒后最小化窗口
 
     def log(self, message, save_to_file=True):
         def update_log():
